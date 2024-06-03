@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+*  React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -40,14 +40,15 @@ Coded by www.creative-tim.com
 import Icon from "@mui/material/Icon";
 
 // @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+import GolfCourseIcon from "@mui/icons-material/GolfCourse";
 
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
+// import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
-
+// import PlayerSubscription from "layouts/pages/landing-pages/PlayerSubscription";
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
 import Features from "layouts/sections/page-sections/featuers";
@@ -70,7 +71,7 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
+    name: "Accueil",
     icon: <Icon>dashboard</Icon>,
     columns: 1,
     rowsPerColumn: 2,
@@ -89,9 +90,9 @@ const routes = [
             component: <ContactUs />,
           },
           {
-            name: "author",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
+            name: "Subscription",
+            route: "/pages/landing-pages/Subscription",
+            // component: <PlayerSubscription />,
           },
         ],
       },
@@ -108,7 +109,7 @@ const routes = [
     ],
   },
   {
-    name: "sections",
+    name: "Gérer votre club",
     icon: <Icon>view_day</Icon>,
     collapse: [
       {
@@ -239,7 +240,7 @@ const routes = [
     ],
   },
   {
-    name: "docs",
+    name: "Compétitions",
     icon: <Icon>article</Icon>,
     collapse: [
       {
@@ -265,8 +266,8 @@ const routes = [
     ],
   },
   {
-    name: "github",
-    icon: <GitHubIcon />,
+    name: "Réservations Terrain",
+    icon: <GolfCourseIcon />,
     href: "https://www.github.com/creativetimofficial/material-kit-react",
   },
 ];
